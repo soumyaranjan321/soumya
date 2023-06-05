@@ -1,0 +1,32 @@
+package TEST;
+
+import org.testng.annotations.Test;
+
+import POM.DeleteCustomer;
+import POM.Pom_ActitimeLoginPage;
+import POM.Pom_actitimeHomePage;
+
+public class TC3Actitime extends BaseTest
+{
+	@Test
+	public void loginlogoutcreatecustomer()
+	{
+	
+		Pom_ActitimeLoginPage log= new Pom_ActitimeLoginPage(driver);
+		log.enterUsername();
+		log.password();
+		log.checkBox();
+		log.login();
+
+		Pom_actitimeHomePage home= new Pom_actitimeHomePage(driver);
+		home.clickTask();
+		
+		DeleteCustomer delete=  new DeleteCustomer(driver);
+		delete.clickonGoluMolu();
+		delete.clickonsetting();
+		delete.actionstab();
+		delete.deleteButton();
+		delete.deletepermanetbutton();
+
+	}
+}

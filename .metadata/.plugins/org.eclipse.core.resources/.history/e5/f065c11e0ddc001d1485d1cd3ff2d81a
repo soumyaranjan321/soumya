@@ -1,0 +1,15 @@
+package webdriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class OpenBrowser
+{
+	public static void main(String[]args)
+	{
+		System.setProperty("webDriver.chrome.drive","./driver/chromedriver.exe");
+		System.setProperty("webdriver.edge.driver","./driver/edgedriver.exe");
+		ChromeDriver driver=new ChromeDriver();
+		driver.get("https:/www.mynta.com");
+	}
+}

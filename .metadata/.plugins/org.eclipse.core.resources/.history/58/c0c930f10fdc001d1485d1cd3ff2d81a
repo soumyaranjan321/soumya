@@ -1,0 +1,19 @@
+package webdriver;
+
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class OpenBrowser
+{
+	public static void main(String[]args)
+	{
+		//System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		//System.setProperty("webdriver.edge.driver", "./driver/msedgedriver.exe");
+		//ChromeDriver driver=new ChromeDriver();
+		//EdgeDriver driver= new EdgeDriver();
+		System.setProperty("webdriver.gecko.driver", "./driver/geckodriver.exe");
+		EdgeDriver driver= new EdgeDriver();
+		
+		
+		driver.get("https:/www.flipcard.com");
+	}
+}

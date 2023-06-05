@@ -1,0 +1,46 @@
+package POM;
+
+import java.time.Duration;
+
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import org.openqa.selenium.support.PageFactory;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+public class Pom_actitimeHomePage 
+{
+	WebDriver driver;
+	JavascriptExecutor js;
+	
+	@FindBy(xpath = "//a[.='Logout']")
+	private WebElement logoutLink;
+	
+	@FindBy(xpath = "//div[@id='container_tasks']")
+	private WebElement ClickTask;
+	
+
+	public Pom_actitimeHomePage(WebDriver driver)
+	{
+		this.driver = driver;
+		PageFactory.initElements(driver,this);
+	}
+	public void clickTask()
+	{
+		js= (JavascriptExecutor) driver;
+		WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(ClickTask));
+		js.executeScript("arguments[0].click()", ClickTask);
+		//ClickTask.click();
+	}
+	public void logoutmethod()
+	{
+		js=(JavascriptExecutor)driver;
+		WebDriverWait wait= new WebDriverWait(driver, Duration.ofSeconds(30));
+		wait.until(ExpectedConditions.visibilityOf(logoutLink));
+		js.executeScript("arguments[0].click()", logoutLink);
+//	logoutLink.click();
+	}
+}

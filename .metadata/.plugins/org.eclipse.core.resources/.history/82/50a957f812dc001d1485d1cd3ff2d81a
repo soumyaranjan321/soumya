@@ -1,0 +1,30 @@
+package webdriver;
+
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+
+public class OpenBrowser
+{
+	static
+	{
+		System.setProperty("webdriver.chrome.driver", "./driver/chromedriver.exe");
+		System.setProperty("webdriver.edge.driver", "./driver/msedgedriver.exe");
+		
+	}
+	public static void Test(ChromeDriver driver)
+	{
+		System.out.println("Chrome broswer is open");
+	}
+	public static void Test(EdgeDriver driver)
+
+	{
+		System.out.println("EdgeDriver driver");
+	}
+public static void main(String[]args)
+	{
+		ChromeDriver driver=new ChromeDriver();
+		OpenBrowser.Test(driver);
+		EdgeDriver driver1=new EdgeDriver();
+		OpenBrowser.Test(driver1);
+	}
+}

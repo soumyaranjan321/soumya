@@ -1,0 +1,25 @@
+package webdriver;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Assignment2 
+{
+
+	public static void main(String[] args) throws InterruptedException
+	{
+		System.setProperty("webdriver.chrome.driver","./driver/chromedriver.exe");
+		WebDriver driver= new ChromeDriver();
+		driver.get("https://en-gb.facebook.com");
+		//driver.findElement(By.cssSelector("input[id='email']")).sendKeys("hhh");
+		//driver.findElement(By.cssSelector("input[type='password']")).sendKeys("hgdg");
+		driver.findElement(By.linkText("Create new account")).click();
+		Thread.sleep(3000);
+		driver.findElement(By.cssSelector("input[type='text']")).sendKeys("asdf");
+		driver.findElement(By.cssSelector("input[class='inputtext _58mg _5dba _2ph-']")).sendKeys("hhh");
+		//driver.findElement(By.cssSelector("")).sendKeys(args);
+		//	driver.findElement(By.cssSelector("")).sendKeys(args);
+
+	}
+}

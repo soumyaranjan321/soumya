@@ -1,0 +1,166 @@
+[1683706707.484][INFO]: Starting ChromeDriver 112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936}) on port 26182
+[1683706707.484][INFO]: Please see https://chromedriver.chromium.org/security-considerations for suggestions on keeping ChromeDriver safe.
+[1683706707.816][INFO]: [86f0c5161e6e69ebffd00f777776ca27] COMMAND InitSession {
+   "capabilities": {
+      "firstMatch": [ {
+         "browserName": "chrome",
+         "goog:chromeOptions": {
+            "args": [ "--remote-allow-origins=*" ],
+            "extensions": [  ]
+         }
+      } ]
+   },
+   "desiredCapabilities": {
+      "browserName": "chrome",
+      "goog:chromeOptions": {
+         "args": [ "--remote-allow-origins=*" ],
+         "extensions": [  ]
+      }
+   }
+}
+[1683706707.820][INFO]: Populating Preferences file: {
+   "alternate_error_pages": {
+      "enabled": false
+   },
+   "autofill": {
+      "enabled": false
+   },
+   "browser": {
+      "check_default_browser": false
+   },
+   "distribution": {
+      "import_bookmarks": false,
+      "import_history": false,
+      "import_search_engine": false,
+      "make_chrome_default_for_user": false,
+      "skip_first_run_ui": true
+   },
+   "dns_prefetching": {
+      "enabled": false
+   },
+   "profile": {
+      "content_settings": {
+         "pattern_pairs": {
+            "https://*,*": {
+               "media-stream": {
+                  "audio": "Default",
+                  "video": "Default"
+               }
+            }
+         }
+      },
+      "default_content_setting_values": {
+         "geolocation": 1
+      },
+      "default_content_settings": {
+         "geolocation": 1,
+         "mouselock": 1,
+         "notifications": 1,
+         "popups": 1,
+         "ppapi-broker": 1
+      },
+      "password_manager_enabled": false
+   },
+   "safebrowsing": {
+      "enabled": false
+   },
+   "search": {
+      "suggest_enabled": false
+   },
+   "translate": {
+      "enabled": false
+   }
+}
+[1683706707.821][INFO]: Populating Local State file: {
+   "background_mode": {
+      "enabled": false
+   },
+   "ssl": {
+      "rev_checking": {
+         "enabled": false
+      }
+   }
+}
+[1683706707.824][INFO]: Launching chrome: "C:\Program Files (x86)\Google\Chrome\Application\chrome.exe" --allow-pre-commit-input --disable-background-networking --disable-backgrounding-occluded-windows --disable-client-side-phishing-detection --disable-default-apps --disable-hang-monitor --disable-popup-blocking --disable-prompt-on-repost --disable-sync --enable-automation --enable-blink-features=ShadowDOMV0 --enable-logging --log-level=0 --no-first-run --no-service-autorun --password-store=basic --remote-allow-origins=* --remote-debugging-port=0 --test-type=webdriver --use-mock-keychain --user-data-dir="C:\Users\DELL\AppData\Local\Temp\scoped_dir2420_575733023" data:,
+[1683706708.362][WARNING]: This version of ChromeDriver has not been tested with Chrome version 113.
+[1683706708.371][INFO]: resolved localhost to ["::1","127.0.0.1"]
+[1683706708.388][INFO]: [86f0c5161e6e69ebffd00f777776ca27] RESPONSE InitSession {
+   "capabilities": {
+      "acceptInsecureCerts": false,
+      "browserName": "chrome",
+      "browserVersion": "113.0.5672.93",
+      "chrome": {
+         "chromedriverVersion": "112.0.5615.49 (bd2a7bcb881c11e8cfe3078709382934e3916914-refs/branch-heads/5615@{#936})",
+         "userDataDir": "C:\\Users\\DELL\\AppData\\Local\\Temp\\scoped_dir2420_575733023"
+      },
+      "goog:chromeOptions": {
+         "debuggerAddress": "localhost:54913"
+      },
+      "networkConnectionEnabled": false,
+      "pageLoadStrategy": "normal",
+      "platformName": "windows",
+      "proxy": {
+      },
+      "setWindowRect": true,
+      "strictFileInteractability": false,
+      "timeouts": {
+         "implicit": 0,
+         "pageLoad": 300000,
+         "script": 30000
+      },
+      "unhandledPromptBehavior": "dismiss and notify",
+      "webauthn:extension:credBlob": true,
+      "webauthn:extension:largeBlob": true,
+      "webauthn:extension:minPinLength": true,
+      "webauthn:extension:prf": true,
+      "webauthn:virtualAuthenticators": true
+   },
+   "sessionId": "86f0c5161e6e69ebffd00f777776ca27"
+}
+[1683706708.611][INFO]: [86f0c5161e6e69ebffd00f777776ca27] COMMAND Navigate {
+   "url": "https://omayo.blogspot.com"
+}
+[1683706708.611][INFO]: Waiting for pending navigations...
+[1683706708.615][INFO]: Done waiting for pending navigations. Status: ok
+[1683706716.331][INFO]: Waiting for pending navigations...
+[1683706719.098][INFO]: Done waiting for pending navigations. Status: ok
+[1683706719.098][INFO]: [86f0c5161e6e69ebffd00f777776ca27] RESPONSE Navigate
+[1683706719.107][INFO]: [86f0c5161e6e69ebffd00f777776ca27] COMMAND FindElements {
+   "using": "xpath",
+   "value": "//table[@id='table1']/thead//th"
+}
+[1683706719.107][INFO]: Waiting for pending navigations...
+[1683706719.109][INFO]: Done waiting for pending navigations. Status: ok
+[1683706719.124][INFO]: Waiting for pending navigations...
+[1683706719.125][INFO]: Done waiting for pending navigations. Status: ok
+[1683706719.125][INFO]: [86f0c5161e6e69ebffd00f777776ca27] RESPONSE FindElements [ {
+   "element-6066-11e4-a52e-4f735466cecf": "44b96c12-fc43-4412-9599-e5d851f4c82c"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f83bcef9-335a-408e-92b6-59cac32dc586"
+}, {
+   "element-6066-11e4-a52e-4f735466cecf": "f387284f-2c96-419d-81ff-e6d1fce4f970"
+} ]
+[1683706719.142][INFO]: [86f0c5161e6e69ebffd00f777776ca27] COMMAND GetElementText {
+   "id": "44b96c12-fc43-4412-9599-e5d851f4c82c"
+}
+[1683706719.142][INFO]: Waiting for pending navigations...
+[1683706719.143][INFO]: Done waiting for pending navigations. Status: ok
+[1683706719.163][INFO]: Waiting for pending navigations...
+[1683706719.165][INFO]: Done waiting for pending navigations. Status: ok
+[1683706719.165][INFO]: [86f0c5161e6e69ebffd00f777776ca27] RESPONSE GetElementText "Name"
+[1683706719.170][INFO]: [86f0c5161e6e69ebffd00f777776ca27] COMMAND GetElementText {
+   "id": "f83bcef9-335a-408e-92b6-59cac32dc586"
+}
+[1683706719.171][INFO]: Waiting for pending navigations...
+[1683706719.172][INFO]: Done waiting for pending navigations. Status: ok
+[1683706719.190][INFO]: Waiting for pending navigations...
+[1683706719.191][INFO]: Done waiting for pending navigations. Status: ok
+[1683706719.191][INFO]: [86f0c5161e6e69ebffd00f777776ca27] RESPONSE GetElementText "Age"
+[1683706719.197][INFO]: [86f0c5161e6e69ebffd00f777776ca27] COMMAND GetElementText {
+   "id": "f387284f-2c96-419d-81ff-e6d1fce4f970"
+}
+[1683706719.197][INFO]: Waiting for pending navigations...
+[1683706719.199][INFO]: Done waiting for pending navigations. Status: ok
+[1683706719.215][INFO]: Waiting for pending navigations...
+[1683706719.216][INFO]: Done waiting for pending navigations. Status: ok
+[1683706719.216][INFO]: [86f0c5161e6e69ebffd00f777776ca27] RESPONSE GetElementText "Place"

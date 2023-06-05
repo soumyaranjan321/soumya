@@ -1,0 +1,25 @@
+package Tastcase;
+
+import java.io.IOException;
+
+import org.testng.annotations.Test;
+
+import Generic.BaseTest;
+import Page.ActitimeLoginPage;
+import Page.Pom_actitimeHomePage;
+
+public class TC1_ActitimeLoginLogout extends BaseTest
+{ 
+	@Test
+	public void loginlogout() throws IOException
+	{
+		ActitimeLoginPage loginPage=new ActitimeLoginPage(driver);
+		loginPage.loginMethod();
+		loginPage.titlevalidate();
+
+		Pom_actitimeHomePage homePage=new Pom_actitimeHomePage(driver);
+		homePage.logoutmethod();
+
+
+	}
+}

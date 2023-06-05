@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Copy element &apos;Pom_actitimeHomePage.java&apos; to &apos;AutomationFrameWork/src/Page&apos;&#x0D;&#x0A;- Original project: &apos;PageObjectModel&apos;&#x0D;&#x0A;- Destination element: &apos;AutomationFrameWork/src/Page&apos;&#x0D;&#x0A;- Original element: &apos;POM.Pom_actitimeHomePage.java&apos;" description="Copy compilation unit" destination="=AutomationFrameWork/src&lt;Page" element1="/src&lt;POM{Pom_actitimeHomePage.java" files="0" flags="589830" folders="0" id="org.eclipse.jdt.ui.copy" policy="org.eclipse.jdt.ui.copyResources" stamp="1685416286474" units="1" version="1.0"/>
+</session>
